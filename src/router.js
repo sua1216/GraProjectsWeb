@@ -6,10 +6,10 @@ Vue.use(Router)
 const router = new Router({
 	routes: [
 		// {
-		// 	path: '/djyl/zhengzhijianshe',
-		// 	name: '政治建设',
-		// 	component: () => import('./views/Zhengzhijianshe.vue'),
-		// 	meta:{auth:true,keepAlive: false},
+		// 	path: '/',
+		// 	name: '首页',
+		// 	component: () => import('./views/HeadNav.vue'),
+		// 	// meta:{auth:true,keepAlive: false},
 		// },
 
 	]
@@ -19,7 +19,7 @@ router.afterEach((to) => {
 	if(to.meta.title){
 		window.document.title = to.meta.title + ' -' + process.env.VUE_APP_SERVION;
 	}else{
-		window.document.title = '楚雄区·城市治理一图全面感知平台' + ' -' + process.env.VUE_APP_SERVION;
+		window.document.title = '爱阮家民宿在线订购网站' + ' -' + process.env.VUE_APP_SERVION;
 	}
 })
 

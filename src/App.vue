@@ -1,6 +1,8 @@
 <template>
 	<div id="app">
-
+		<HeadNav></HeadNav>
+		<MainContent></MainContent>
+		<Footer></Footer>
 		<router-view />
 	</div>
 </template>
@@ -12,6 +14,12 @@
 			return {
 
 			}
+		},
+		components: {
+			HeadNav:()=>import('./views/HeadNav.vue'),
+			MainContent:()=>import('./views/MainContent.vue'),
+			Footer:()=>import('./views/Footer.vue')
+
 		},
 		computed:{
 			TopStyle(){
@@ -25,10 +33,8 @@
 		},
 		mounted(){
 		    window.vl = this;
-		},
-		components: {
-            BaseMap,HeadNav
 		}
+
 	}
 </script>
 
@@ -37,8 +43,8 @@
 		font-family: 'Avenir', Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		color: #fff;
 		height: 1023px;
 		position: relative;
+
 	}
 </style>
