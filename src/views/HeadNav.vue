@@ -11,8 +11,8 @@
 <style scoped lang="scss">
     .headnav-box {
         width: 100%;
-        height: 529px;
+        height: 600px;
         background: url('~@/assets/headnav/headnav.png') no-repeat;
-        background-size:100% 200%;
+        background-size:100% 170%;
     }
 </style>
