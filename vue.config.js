@@ -19,7 +19,7 @@ module.exports = {
 					'@': path.resolve(__dirname, './src'),
 					'@c': path.resolve(__dirname, './src/components'),
 					'@cp':path.resolve(__dirname, './src/components/pages'),
-					'@image': path.resolve(__dirname, './src/assets/common/images')
+					'@image': path.resolve(__dirname, './src/assets/images')
 				} // 别名配置
 			}
 

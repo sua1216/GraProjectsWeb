@@ -1,13 +1,25 @@
 <template>
 	<div id="app">
+
+<!--		<el-carousel :interval="5000" arrow="always">-->
+<!--			<el-carousel-item v-for="(img,index) in imgList" :key="index">-->
+<!--				<img v-bind:src="img.url">-->
+<!--			</el-carousel-item>-->
+<!--		</el-carousel>-->
+
+
 		<HeadNav></HeadNav>
 		<MainContent></MainContent>
-		<Footer></Footer>
+
 		<router-view />
+
+
+
+
+
 	</div>
 </template>
 <script>
-
     export default {
 		name: 'app',
 		data: function () {
@@ -43,8 +55,14 @@
 		font-family: 'Avenir', Helvetica, Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		height: 1023px;
+		width: 100%;
+		/*height: 1023px;*/
 		position: relative;
 
+		margin: 0;
+		padding: 0;
 	}
+
+
+
 </style>

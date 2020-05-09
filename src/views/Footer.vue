@@ -10,7 +10,7 @@
 
 <style scoped lang="scss">
     .footer-box {
-        width: 30%;
+        width: 1100px;
         height: 354px;
         background-color: #92ffee;
         margin: 0 auto;
